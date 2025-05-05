@@ -1,0 +1,9 @@
+### Create a new restaurant
+POST http://localhost:4000/restaurants
+Content-Type: application/json
+
+{
+	"name" : "resturant 1",
+  "location" : "Cairo",
+  "cuisines": []
+}
