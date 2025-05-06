@@ -14,6 +14,9 @@
     "module": "NodeNext",
     "outDir": "dist",
     "sourceMap": true,
-    "lib": ["es2022"]
-  }
+    "lib": ["es2022"],
+    "incremental": true,
+    "tsBuildInfoFile": "./.tsbuildinfo"
+  },
+  "exclude": ["node_modules", "dist"]
 }

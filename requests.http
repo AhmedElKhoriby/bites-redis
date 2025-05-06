@@ -3,7 +3,13 @@ POST http://localhost:4000/restaurants
 Content-Type: application/json
 
 {
-	"name" : "resturant 1",
-  "location" : "Cairo",
-  "cuisines": []
+	"name" : "Resturant 2",
+  "location" : "0,0",
+  "cuisines": [ ]
 }
+
+### Get all restaurants
+GET http://localhost:4000/restaurants
+
+### Get a restaurant by ID
+GET http://localhost:4000/restaurants/A9JqRGXJknVBYNba9ZOKy
