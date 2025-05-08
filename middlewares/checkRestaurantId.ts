@@ -9,7 +9,7 @@ export const checkRestaurantExists = async (
   next: NextFunction
 ) => {
   const { restaurantId } = req.params;
-  console.log(req.params);
+
   if (!restaurantId) {
     errorResponse(res, 400, 'Restaurant ID not found');
     return;

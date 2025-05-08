@@ -1,3 +1,7 @@
+###=====================================###
+###      Restaurant API Requests
+###=====================================###
+
 ### Create a new restaurant
 POST http://localhost:4000/restaurants
 Content-Type: application/json
@@ -8,8 +12,24 @@ Content-Type: application/json
   "cuisines": [ ]
 }
 
-### Get all restaurants
-GET http://localhost:4000/restaurants
-
 ### Get a restaurant by ID
-GET http://localhost:4000/restaurants/A9JqRGXJknVBYNba9ZOKy
+GET http://localhost:4000/restaurants/cVwnwF46A8C1TX9QCm5Iy
+
+###=====================================###
+###         Review API Requests
+###=====================================###
+
+### Create a new review
+POST http://localhost:4000/restaurants/cVwnwF46A8C1TX9QCm5Iy/reviews
+Content-Type: application/json
+
+{
+  "review": "Very Good!",
+  "rating": 5
+}
+
+### Get all reviews for a restaurant
+GET http://localhost:4000/restaurants/cVwnwF46A8C1TX9QCm5Iy/reviews
+
+### Delete a review by ID
+DELETE http://localhost:4000/restaurants/cVwnwF46A8C1TX9QCm5Iy/reviews/XcyO9nPYIieIfOCy3p00D
